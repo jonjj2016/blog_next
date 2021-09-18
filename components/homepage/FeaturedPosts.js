@@ -1,10 +1,12 @@
-import React from 'react'
+import classes from './featured-posts.module.css';
+import PostGrid from '../posts/postGrid';
 
-const Featured = () => {
+const Featured = ({posts=[]}) => {
     return (
-        <div>
-            Featured
-        </div>
+        <section className={classes.latest}>
+            <h2>Featured Posts</h2>
+            <PostGrid posts={posts}/>
+        </section>
     )
 }
 
